@@ -1,0 +1,23 @@
+# Comments should not be used in this file and they are shown in 
+# this example just to explain the different parts of this output file.
+# This is an output file that is generated after executing the C program
+# that solves the NxN linear system. This file conveys the same information
+# as the original input file, but it is more suitable for the Verilog test
+# bench. The only difference is in reporting the used scale, which is done
+# solely for documentation purposes, and shall be ignored by the Verilog 
+# test bench.
+# The first line contains the SCALE (design parameter)
+16
+# The rest of the file is exactly in the same order and structure as the
+# original input, but the number system used is hexadecimal. In the following,
+# we list N, number of iterations, threshold, A, and b, for the same example
+# that is shown in the input file (without the comments)
+2
+5
+147
+10000
+20000
+38000
+fffd4000
+58000
+fffd199a

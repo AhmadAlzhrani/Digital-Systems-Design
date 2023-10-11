@@ -1,0 +1,45 @@
+# This is an input file for the C program that solves a system
+# of NxN equations (Ax = b) using the Jacobi iterative method.
+# The system expects a diagonally-dominant matrix A; otherwise,
+# the program rejects solving the system, since it may diverge.
+# In this input file, any line starting with a pound sign (#) is considered
+# a comment and is ignored by the program.
+# The first input provided is the system size, N. N should be provided 
+# in decimal basis and must be an integer satisfying 1<N<201.
+# Here is an example of N for defining a 2x2 system:
+2
+# Next is the maximum number of iterations to perform before reporting 
+# the result. This also must be an integer and in decimal basis.
+# Here is an example:
+5
+# Next is the threshold, th, at which when the new solution x[k] differs
+# by an absolute amount that is less than th, the program stops and 
+# reports the result. This parameter is input in floating-point format.
+# Here is an example:
+0.005
+# This means that whenever the max {|x[k]-x[k-1]|} is less than th, stop
+# and report x[k].
+# Next, we provide the elements of Matrix A row-wise, one element every
+# line. Every element is signed and is given in decimal basis with 
+# floating-point option if needed. 
+# In the following example, we assume A=[1, 2; 3.5, -2.75].
+# First, element A[0,0]
+1
+# Next, element A[0,1]
+2
+# A[1,0]
+3.5
+# A[1,1]]
+-2.75
+# After feeding A to the program, we start feeding Vector b in the 
+# same manner as we did with A (floating-point, decimal, one element 
+# every line)
+# b[0]
+5.5
+# b[1]
+-2.9
+# That's it! Complete input file. Now take a look at how the ouptut file
+# should be formatted.
+
+
+

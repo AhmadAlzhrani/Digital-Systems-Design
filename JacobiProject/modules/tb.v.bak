@@ -1,0 +1,45 @@
+module test_tb;
+
+reg [31:0] din;
+reg clk, reset, go;
+wire [31:0] dout;
+wire drdy;
+
+reg[31:0] mem[0:65536];
+integer i, file, file_out;
+integer counter =0;
+
+top top_test (din, clk, reset, go, dout, drdy);	
+
+initial
+begin 
+	clk = 0;
+	forever
+	begin
+	clk = !clk;
+	#5;
+	end
+end 
+initial 
+begin 
+	file = $fopen("input.txt","r");
+	file_out = $fopen("output.txt","w");
+
+	for (i =0;i<65536; i= i+1)
+	begin 
+		@(posedge clk);
+		$fscanf(file,"%d", mem);
+	end
+	$fclose(file);
+end
+
+always @(posedge clk)
+	begin 
+	if (drdy)
+		$fprintf(file_out,"%d",dout)
+		conuter = counter +1
+	end 
+	if(counter == 65536)
+	$fclose(file_out);
+end
+endmodule

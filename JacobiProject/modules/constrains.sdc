@@ -1,0 +1,214 @@
+## Generated SDC file "constrains.sdc"
+
+## Copyright (C) 2018  Intel Corporation. All rights reserved.
+## Your use of Intel Corporation's design tools, logic functions 
+## and other software and tools, and its AMPP partner logic 
+## functions, and any output files from any of the foregoing 
+## (including device programming or simulation files), and any 
+## associated documentation or information are expressly subject 
+## to the terms and conditions of the Intel Program License 
+## Subscription Agreement, the Intel Quartus Prime License Agreement,
+## the Intel FPGA IP License Agreement, or other applicable license
+## agreement, including, without limitation, that your use is for
+## the sole purpose of programming logic devices manufactured by
+## Intel and sold by Intel or its authorized distributors.  Please
+## refer to the applicable agreement for further details.
+
+
+## VENDOR  "Altera"
+## PROGRAM "Quartus Prime"
+## VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+## DATE    "Fri Dec 16 20:24:35 2022"
+
+##
+## DEVICE  "5CGTFD9E5F35C7"
+##
+
+
+#**************************************************************
+# Time Information
+#**************************************************************
+
+set_time_format -unit ns -decimal_places 3
+
+
+
+#**************************************************************
+# Create Clock
+#**************************************************************
+
+create_clock -name {clk} -period 200.000 -waveform { 0.000 100.000 } [get_ports {clk}]
+
+
+#**************************************************************
+# Create Generated Clock
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Clock Latency
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Clock Uncertainty
+#**************************************************************
+
+set_clock_uncertainty -rise_from [get_clocks {clk}] -rise_to [get_clocks {clk}] -setup 0.100  
+set_clock_uncertainty -rise_from [get_clocks {clk}] -rise_to [get_clocks {clk}] -hold 0.060  
+set_clock_uncertainty -rise_from [get_clocks {clk}] -fall_to [get_clocks {clk}] -setup 0.100  
+set_clock_uncertainty -rise_from [get_clocks {clk}] -fall_to [get_clocks {clk}] -hold 0.060  
+set_clock_uncertainty -fall_from [get_clocks {clk}] -rise_to [get_clocks {clk}] -setup 0.100  
+set_clock_uncertainty -fall_from [get_clocks {clk}] -rise_to [get_clocks {clk}] -hold 0.060  
+set_clock_uncertainty -fall_from [get_clocks {clk}] -fall_to [get_clocks {clk}] -setup 0.100  
+set_clock_uncertainty -fall_from [get_clocks {clk}] -fall_to [get_clocks {clk}] -hold 0.060  
+
+
+#**************************************************************
+# Set Input Delay
+#**************************************************************
+
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[0]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[1]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[2]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[3]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[4]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[5]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[6]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[7]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[8]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[9]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[10]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[11]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[12]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[13]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[14]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[15]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[16]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[17]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[18]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[19]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[20]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[21]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[22]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[23]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[24]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[25]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[26]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[27]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[28]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[29]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[30]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {din[31]}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {go}]
+set_input_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {reset}]
+
+
+#**************************************************************
+# Set Output Delay
+#**************************************************************
+
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[0]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[1]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[2]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[3]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[4]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[5]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[6]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[7]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[8]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[9]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[10]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[11]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[12]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[13]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[14]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[15]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[16]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[17]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[18]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[19]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[20]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[21]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[22]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[23]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[24]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[25]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[26]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[27]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[28]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[29]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[30]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {dout[31]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {drdy}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[0]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[1]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[2]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[3]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[4]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[5]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[6]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[7]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[8]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[9]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[10]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[11]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[12]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[13]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[14]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[15]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[16]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[17]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[18]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[19]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[20]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[21]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[22]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[23]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[24]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[25]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[26]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[27]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[28]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[29]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[30]}]
+set_output_delay -add_delay  -clock [get_clocks {clk}]  1.000 [get_ports {q[31]}]
+
+
+#**************************************************************
+# Set Clock Groups
+#**************************************************************
+
+
+
+#**************************************************************
+# Set False Path
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Multicycle Path
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Maximum Delay
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Minimum Delay
+#**************************************************************
+
+
+
+#**************************************************************
+# Set Input Transition
+#**************************************************************
+

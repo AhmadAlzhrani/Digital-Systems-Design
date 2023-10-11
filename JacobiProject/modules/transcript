@@ -1,0 +1,10 @@
+# Reading D:/quartus/modelsim_ase/tcl/vsim/pref.tcl
+# Load canceled
+vsim -gui a
+# vsim -gui a 
+# Start time: 18:51:52 on Dec 14,2022
+# ** Error (suppressible): (vsim-19) Failed to access library 'work' at "work".
+# No such file or directory. (errno = ENOENT)
+# Error loading design
+# End time: 18:51:53 on Dec 14,2022, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

@@ -1,0 +1,13 @@
+# This is the third output file that the C program generates. The comments
+# are inserted here for explanation puroses, and your program is not expected
+# to produce comments in output file.
+# The first line contains the system size in hexadecimal. Assuming A and b from
+# the input file, then we have the following outputs:
+# The value of N in hexadecimal
+2
+# Then the values of x vector, one element per line, in hexadecimal 
+# format (2's complement representation) 
+f4d6
+24594
+# That's it! So your generated output should contain only three lines:
+# one line for N, and N lines for x.
